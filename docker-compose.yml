@@ -16,6 +16,7 @@ services:
     build:
       context: .
       dockerfile: ./docker/nodejs/Dockerfile
+    tty: true
     volumes:
       - .:/build
     working_dir: /build
